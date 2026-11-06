@@ -51,7 +51,7 @@ export function buildLocalBusinessSchema() {
       addressCountry: "JP",
     },
     telephone: clinicInfo.phone,
-    url: "https://furio-tenjin.jp",
+    url: "https://www.juliotenjin.com",
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
