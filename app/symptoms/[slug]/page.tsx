@@ -28,7 +28,7 @@ export function generateMetadata({ params }: Params): Metadata {
     title: symptom.title,
     description: `${symptom.title}でお悩みの方へ。フリオ天神整骨院では、${symptom.shortDesc}。天神南駅徒歩圏内の整骨院です。`,
     alternates: {
-      canonical: `https://furio-tenjin.jp/symptoms/${symptom.slug}`,
+      canonical: `https://www.juliotenjin.com/symptoms/${symptom.slug}`,
     },
   };
 }
@@ -42,14 +42,14 @@ export default function SymptomPage({ params }: Params) {
       <SEOJsonLd data={buildFAQSchema(symptom.faq)} />
       <SEOJsonLd
         data={buildBreadcrumbSchema([
-          { name: "ホーム", url: "https://furio-tenjin.jp" },
+          { name: "ホーム", url: "https://www.juliotenjin.com" },
           {
             name: "お悩み別メニュー",
-            url: "https://furio-tenjin.jp/symptoms",
+            url: "https://www.juliotenjin.com/symptoms",
           },
           {
             name: symptom.title,
-            url: `https://furio-tenjin.jp/symptoms/${symptom.slug}`,
+            url: `https://www.juliotenjin.com/symptoms/${symptom.slug}`,
           },
         ])}
       />
