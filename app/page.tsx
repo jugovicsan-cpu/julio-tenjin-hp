@@ -253,6 +253,31 @@ export default function TopPage() {
               <TreatmentCard key={t.id} treatment={t} />
             ))}
           </div>
+
+          {/* 姿勢の変化の例 */}
+          <figure className="mt-12 max-w-[560px] mx-auto">
+            <h3 className="font-serif text-[18px] font-semibold text-[var(--navy)] text-center mb-4">
+              姿勢の変化の例
+            </h3>
+            <div
+              className="relative rounded-[20px] overflow-hidden bg-white shadow-md"
+              style={{ aspectRatio: "1138 / 1437" }}
+            >
+              <Image
+                src="/images/posture/image.jpg"
+                alt="姿勢の施術前（Before）と施術後（After）の比較。横から見たときの頭の位置の変化"
+                fill
+                sizes="(max-width: 640px) 100vw, 560px"
+                className="object-cover"
+              />
+            </div>
+            <figcaption className="mt-3">
+              <LegalNote
+                text="※個人の施術前後の写真です。効果には個人差があり、同様の結果を保証するものではありません。"
+                className="text-center"
+              />
+            </figcaption>
+          </figure>
         </div>
       </section>
 
