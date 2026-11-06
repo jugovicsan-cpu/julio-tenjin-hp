@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   title: "フリオ天神整骨院 | 福岡市中央区天神南・渡辺通の整骨院",
   description:
     "天神南駅から徒歩圏内。柔道整復師の院長が専任で対応するプライベート整骨院。肩こり・腰痛・骨盤矯正・産後骨盤・スポーツ整体・交通事故後の不調相談。",
-  alternates: { canonical: "https://furio-tenjin.jp" },
+  alternates: { canonical: "https://www.juliotenjin.com" },
 };
 
 const REASONS = [
