@@ -28,7 +28,7 @@ npm run dev
 ## ディレクトリ構成
 
 ```
-furio-tenjin/
+julio-tenjin/
 ├── app/                      # Next.js App Router
 │   ├── layout.tsx            # ルートレイアウト（SEO・フォント・JSON-LD）
 │   ├── page.tsx              # トップページ
