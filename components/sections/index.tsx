@@ -368,17 +368,18 @@ export function PriceTable({ items }: PriceTableProps) {
 export function AccessMap() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-      {/* 地図プレースホルダー（実装時は iframe に差し替え） */}
-      <div
-        className="rounded-xl overflow-hidden aspect-[4/3] bg-[var(--beige-dark)] flex items-center justify-center text-[var(--text-light)] text-[13px]"
-        role="img"
-        aria-label="Googleマップ（準備中）"
-      >
-        <div className="text-center">
-          <p className="text-[32px] mb-2">📍</p>
-          <p>Googleマップ</p>
-          <p>（実装時に埋め込み）</p>
-        </div>
+      {/* Googleマップ */}
+      <div className="rounded-xl overflow-hidden aspect-[4/3] bg-[var(--beige-dark)] shadow-sm">
+        <iframe
+          src={clinicInfo.googleMapEmbedUrl}
+          title="フリオ天神整骨院の所在地（Googleマップ）"
+          width="600"
+          height="450"
+          className="w-full h-full border-0"
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="strict-origin-when-cross-origin"
+        />
       </div>
 
       <dl className="space-y-4">
