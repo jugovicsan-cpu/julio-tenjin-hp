@@ -213,7 +213,7 @@ export function FlowSteps() {
             <p className="text-[13px] text-[var(--text-secondary)] leading-relaxed">
               {step.body}
             </p>
-            {i === 0 && (
+            {i === 1 && (
               <div className="relative mt-3 rounded-[14px] overflow-hidden aspect-[16/9] bg-[var(--beige-dark)] shadow-sm">
                 <Image
                   src="/images/counseling/image.jpg"
