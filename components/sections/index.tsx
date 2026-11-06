@@ -5,6 +5,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import type { FAQ, PriceItem } from "@/types";
 import { clinicInfo } from "@/data/clinicInfo";
 import { CTAButton, LegalNote } from "@/components/ui/index";
@@ -172,8 +173,9 @@ const STEPS: FlowStep[] = [
 
 export function FlowSteps() {
   return (
+    <div className="grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_minmax(0,360px)] gap-10 md:gap-14 items-start max-w-[960px] mx-auto">
     <div
-      className="flex flex-col max-w-[640px] mx-auto"
+      className="flex flex-col"
       role="list"
       aria-label="施術の流れ"
     >
@@ -214,6 +216,23 @@ export function FlowSteps() {
           </div>
         </div>
       ))}
+    </div>
+
+    {/* 施術中の様子 */}
+    <figure className="m-0 w-full max-w-[360px] mx-auto md:max-w-none md:sticky md:top-24">
+      <div className="relative rounded-[20px] overflow-hidden aspect-[900/1048] bg-[var(--beige-dark)] shadow-md">
+        <Image
+          src="/images/treatment/image.jpg"
+          alt="施術中の様子。首まわりと肩まわりを丁寧に施術します"
+          fill
+          sizes="(max-width: 768px) 360px, 360px"
+          className="object-cover"
+        />
+      </div>
+      <figcaption className="mt-2 text-[12px] text-[var(--text-light)] text-center">
+        施術中の様子
+      </figcaption>
+    </figure>
     </div>
   );
 }
@@ -537,12 +556,14 @@ export function StaffProfile() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 items-start">
       {/* 写真 */}
-      <div
-        className="rounded-[20px] overflow-hidden aspect-[3/4] bg-gradient-to-br from-[var(--navy-light)] to-[var(--mint)] flex items-center justify-center text-white/60 text-[13px] text-center p-5"
-        role="img"
-        aria-label="院長 藤澤勇吾の写真（準備中）"
-      >
-        <span>院長写真<br />（準備中）</span>
+      <div className="relative rounded-[20px] overflow-hidden aspect-[4/5] bg-[var(--beige-dark)] shadow-md">
+        <Image
+          src="/images/staff/image.jpg"
+          alt="院長 藤澤勇吾"
+          fill
+          sizes="(max-width: 768px) 100vw, 360px"
+          className="object-cover object-top"
+        />
       </div>
 
       <div>
