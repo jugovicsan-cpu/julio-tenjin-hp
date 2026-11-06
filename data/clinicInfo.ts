@@ -8,7 +8,7 @@ export const clinicInfo: ClinicInfo = {
     "国家資格者の院長が専任で対応する、落ち着いたプライベート空間の整骨院です。",
   address: "福岡市中央区渡辺通5丁目",
   addressDetail: "福岡県福岡市中央区渡辺通5丁目（天神南エリア）",
-  phone: "092-XXX-XXXX",
+  phone: "092-724-5070",
   lineUrl: "https://lin.ee/YrGqhJf",
   reservationUrl: "https://coubic.com/XXXXXXX",
   googleMapUrl: "https://maps.google.com/?q=フリオ天神整骨院",
