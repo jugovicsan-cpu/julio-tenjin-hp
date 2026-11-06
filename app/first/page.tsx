@@ -1,5 +1,6 @@
 // app/first/page.tsx
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Breadcrumb, SectionHeading, CTAButton } from "@/components/ui/index";
 import { ReservationCTA } from "@/components/sections/index";
 import { ROUTES } from "@/lib/routes";
@@ -34,6 +35,21 @@ export default function FirstPage() {
             ja="初めての方へ"
             desc="フリオ天神整骨院への初めてのご来院について、よくある疑問にお答えします。"
           />
+
+          <figure className="max-w-[640px] mx-auto mb-10">
+            <div className="relative rounded-[20px] overflow-hidden aspect-[16/9] bg-[var(--beige-dark)] shadow-md">
+              <Image
+                src="/images/counseling/image.jpg"
+                alt="院長が問診票を手に、患者さまのお話を丁寧に伺っているカウンセリングの様子"
+                fill
+                sizes="(max-width: 768px) 100vw, 640px"
+                className="object-cover object-top"
+              />
+            </div>
+            <figcaption className="mt-2 text-[12px] text-[var(--text-light)] text-center">
+              初回は丁寧なカウンセリングから始めます
+            </figcaption>
+          </figure>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
