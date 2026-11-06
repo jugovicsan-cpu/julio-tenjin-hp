@@ -23,7 +23,7 @@ export function generateMetadata({ params }: Params): Metadata {
     title: column.title,
     description: column.excerpt,
     alternates: {
-      canonical: `https://furio-tenjin.jp/column/${column.slug}`,
+      canonical: `https://www.juliotenjin.com/column/${column.slug}`,
     },
   };
 }
@@ -39,16 +39,16 @@ export default function ColumnDetailPage({ params }: Params) {
           title: column.title,
           excerpt: column.excerpt,
           publishedAt: column.publishedAt,
-          url: `https://furio-tenjin.jp/column/${column.slug}`,
+          url: `https://www.juliotenjin.com/column/${column.slug}`,
         })}
       />
       <SEOJsonLd
         data={buildBreadcrumbSchema([
-          { name: "ホーム", url: "https://furio-tenjin.jp" },
-          { name: "コラム", url: "https://furio-tenjin.jp/column" },
+          { name: "ホーム", url: "https://www.juliotenjin.com" },
+          { name: "コラム", url: "https://www.juliotenjin.com/column" },
           {
             name: column.title,
-            url: `https://furio-tenjin.jp/column/${column.slug}`,
+            url: `https://www.juliotenjin.com/column/${column.slug}`,
           },
         ])}
       />
@@ -122,7 +122,7 @@ export default function ColumnDetailPage({ params }: Params) {
           </p>
           <div className="flex gap-2">
             <a
-              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(column.title)}&url=${encodeURIComponent(`https://furio-tenjin.jp/column/${column.slug}`)}`}
+              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(column.title)}&url=${encodeURIComponent(`https://www.juliotenjin.com/column/${column.slug}`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-3 py-2 rounded-lg text-[12px] font-bold bg-[#1da1f2] text-white"
@@ -131,7 +131,7 @@ export default function ColumnDetailPage({ params }: Params) {
               𝕏 シェア
             </a>
             <a
-              href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://furio-tenjin.jp/column/${column.slug}`)}`}
+              href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(`https://www.juliotenjin.com/column/${column.slug}`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-3 py-2 rounded-lg text-[12px] font-bold bg-[#1877f2] text-white"
@@ -140,7 +140,7 @@ export default function ColumnDetailPage({ params }: Params) {
               Facebook
             </a>
             <a
-              href={`https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(`https://furio-tenjin.jp/column/${column.slug}`)}`}
+              href={`https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(`https://www.juliotenjin.com/column/${column.slug}`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-3 py-2 rounded-lg text-[12px] font-bold bg-[#06C755] text-white"
