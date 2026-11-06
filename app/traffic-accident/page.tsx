@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "交通事故後の不調相談",
   description:
     "交通事故後の首・肩・腰の違和感でお悩みの方へ。天神南駅近くのフリオ天神整骨院では、むちうち・頸椎捻挫など交通事故後の不調についてご相談いただけます。費用・保険・整形外科との併用についてもお気軽にお問い合わせください。",
-  alternates: { canonical: "https://furio-tenjin.jp/traffic-accident" },
+  alternates: { canonical: "https://www.juliotenjin.com/traffic-accident" },
 };
 
 const ACCIDENT_FAQS = [
@@ -66,10 +66,10 @@ export default function TrafficAccidentPage() {
       <SEOJsonLd data={buildFAQSchema(ACCIDENT_FAQS)} />
       <SEOJsonLd
         data={buildBreadcrumbSchema([
-          { name: "ホーム", url: "https://furio-tenjin.jp" },
+          { name: "ホーム", url: "https://www.juliotenjin.com" },
           {
             name: "交通事故後の不調相談",
-            url: "https://furio-tenjin.jp/traffic-accident",
+            url: "https://www.juliotenjin.com/traffic-accident",
           },
         ])}
       />
