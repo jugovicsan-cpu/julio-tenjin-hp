@@ -213,6 +213,17 @@ export function FlowSteps() {
             <p className="text-[13px] text-[var(--text-secondary)] leading-relaxed">
               {step.body}
             </p>
+            {i === 0 && (
+              <div className="relative mt-3 rounded-[14px] overflow-hidden aspect-[16/9] bg-[var(--beige-dark)] shadow-sm">
+                <Image
+                  src="/images/counseling/image.jpg"
+                  alt="院長が問診票を手に、患者さまのお話を丁寧に伺っているカウンセリングの様子"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 480px"
+                  className="object-cover object-top"
+                />
+              </div>
+            )}
           </div>
         </div>
       ))}
