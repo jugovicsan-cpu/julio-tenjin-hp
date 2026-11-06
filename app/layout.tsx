@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "フリオ天神整骨院",
     locale: "ja_JP",
     type: "website",
-    url: "https://furio-tenjin.jp",
+    url: "https://www.juliotenjin.com",
   },
   twitter: {
     card: "summary_large_image",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: "https://furio-tenjin.jp",
+    canonical: "https://www.juliotenjin.com",
   },
 };
 
