@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { clinicInfo } from "@/data/clinicInfo";
 import { treatments } from "@/data/treatments";
 import { symptoms } from "@/data/symptoms";
@@ -101,13 +102,15 @@ export default function TopPage() {
       >
         <div className="max-w-[1080px] mx-auto px-5">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            {/* 写真プレースホルダー */}
-            <div
-              className="rounded-[20px] overflow-hidden aspect-[4/3] bg-gradient-to-br from-[var(--mint-pale)] to-[var(--beige-dark)] flex items-center justify-center text-[var(--text-light)] text-[13px]"
-              role="img"
-              aria-label="院内の様子（準備中）"
-            >
-              院内写真（準備中）
+            {/* 院内の様子 */}
+            <div className="relative rounded-[20px] overflow-hidden aspect-[4/3] bg-[var(--beige-dark)] shadow-md">
+              <Image
+                src="/images/interior/image.jpg"
+                alt="フリオ天神整骨院の院内。ベッド2台の落ち着いたプライベート空間"
+                fill
+                sizes="(max-width: 768px) 100vw, 540px"
+                className="object-cover"
+              />
             </div>
 
             <div>
