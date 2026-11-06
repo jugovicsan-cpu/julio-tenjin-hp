@@ -102,15 +102,26 @@ export default function TopPage() {
       >
         <div className="max-w-[1080px] mx-auto px-5">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            {/* 院内の様子 */}
-            <div className="relative rounded-[20px] overflow-hidden aspect-[4/3] bg-[var(--beige-dark)] shadow-md">
-              <Image
-                src="/images/interior/image.jpg"
-                alt="フリオ天神整骨院の院内。ベッド2台の落ち着いたプライベート空間"
-                fill
-                sizes="(max-width: 768px) 100vw, 540px"
-                className="object-cover"
-              />
+            {/* 院内の様子・カウンセリング */}
+            <div className="flex flex-col gap-4">
+              <div className="relative rounded-[20px] overflow-hidden aspect-[4/3] bg-[var(--beige-dark)] shadow-md">
+                <Image
+                  src="/images/interior/image.jpg"
+                  alt="フリオ天神整骨院の院内。ベッド2台の落ち着いたプライベート空間"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 540px"
+                  className="object-cover"
+                />
+              </div>
+              <div className="relative rounded-[20px] overflow-hidden aspect-[16/9] bg-[var(--beige-dark)] shadow-md">
+                <Image
+                  src="/images/counseling/image.jpg"
+                  alt="院長が問診票を手に、患者さまのお話を丁寧に伺っているカウンセリングの様子"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 540px"
+                  className="object-cover object-top"
+                />
+              </div>
             </div>
 
             <div>
