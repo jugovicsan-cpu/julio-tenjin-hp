@@ -2,7 +2,7 @@ export const ROUTES = {
   home: "/",
   first: "/first",
   concept: "/concept",
-  treatments: "/treatments",
+  treatments: "/#treatments",
   treatmentSlug: (slug: string) => `/treatments/${slug}`,
   symptoms: "/symptoms",
   symptomSlug: (slug: string) => `/symptoms/${slug}`,
