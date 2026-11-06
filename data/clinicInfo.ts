@@ -13,7 +13,7 @@ export const clinicInfo: ClinicInfo = {
   reservationUrl: "https://coubic.com/XXXXXXX",
   googleMapUrl: "https://maps.google.com/?q=フリオ天神整骨院",
   googleMapEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.8!2d130.3999!3d33.5870",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.6480428765!2d130.40388880000003!3d33.5884864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x354191891168a3b1%3A0xfefe647bd2874e37!2z44OV44Oq44Kq5aSp56We5pW06aqo6Zmi!5e0!3m2!1sja!2sjp!4v1793975586441!5m2!1sja!2sjp",
   hours: [
     { days: "月・火・水・金", open: "10:00", close: "20:00" },
     { days: "木・土", open: "10:00", close: "18:00" },
