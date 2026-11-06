@@ -52,7 +52,7 @@ export function Header() {
                 フリオ天神整骨院
               </span>
               <span className="text-[9px] tracking-[0.15em] text-[var(--text-light)] uppercase">
-                Furio Tenjin Seikotsuin
+                Julio Tenjin Seikotsuin
               </span>
             </Link>
 
